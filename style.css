@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/bg1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: white;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 100;
+}
+
+section nav .logo{
+font-size: 35px;
+color: purple;
+margin: 5px 0;
+cursor: pointer;
+position: relative;
+left: -4%;
+}
+section nav .logo span {
+    color: #6c14d0;
+    text-decoration: underline;
+
+}
+section nav ul{
+    list-style: none;
+}
+section nav ul li{
+    display: inline-block;
+    margin: 5px 15px;
+    cursor: pointer;
+    
+}
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+section nav ul li:hover {
+    transform: scale(1.2);
+}
+
+section nav ul li a:hover {
+    transform: scale(1.2);
+    color: #6c14d0;
+
+}
+
+section nav .icons i{
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .3s;
+}
+section nav .icons i:hover {
+    color: #d014b7;
+}
+
+section .main .main_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+section .main .main_content .main_text h1{
+    font-size: 90px;
+    line-height: 70px;
+    font-family:pyxidium quick;
+    background: linear-gradient(to right, #fa0a9e,#d000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 45px;
+    left: 5%;
+}
+section .main .main_content .main_text h1 span{
+    font-size: 70px;
+    background: linear-gradient(to right #ff0ca2,#d000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+section .main .main_content .main_text p{
+    width: 600px;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: 85px;
+    left: 5%;
+
+}
+section .main .main_content .main_image img{
+    width: 650px;
+    position: relative;
+    left: 20px;   
+    top: 75px;
+}
+
+section .main .main_content .social_icon{
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+    font-size: 19px;
+}
+section .main .main_content .social_icon i{
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section .main .main_content .social_icon i:hover{
+    color: #da07c5;   
+}

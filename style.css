@@ -8,6 +8,18 @@ html{
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+}
+
 section{
     width: 100%;
     height: 100vh;
@@ -64,6 +76,8 @@ section nav ul li:hover {
 section nav ul li a:hover {
     transform: scale(1.2);
     color: #6c14d0;
+    font-weight: bold;
+    text-decoration: underline;
 
 }
 
@@ -73,8 +87,12 @@ section nav .icons i{
     font-size: 18px;
     transition: .3s;
 }
+section nav .icons .fa-solid{
+    color: black;
+}
 section nav .icons i:hover {
     color: #d014b7;
+
 }
 
 section .main .main_content{
@@ -623,4 +641,116 @@ section .main .button:hover{
 .login_form .right .login_icon img{
     width: 20px;
     margin: 5px;
+}
+                        /* footer section*/
+footer{
+    width: 100%;
+}
+.footer_main{
+    width: 100%;
+    background: #f3f3f3f3;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_main .tag{
+    margin: 10px 0;
+}
+.footer_main .tag .center{
+    text-align: justify;
+}
+.footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #1c0080;
+}
+.footer_main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 9px 0;
+}
+.footer_main .tag a:hover{
+    color: #c72092;
+    font-weight: bold;
+}
+.footer_main .tag a i{
+    padding: 0 10px;
+    transition: 0.3s;
+}
+.footer_main .tag a i:hover{
+    color: #c72092;
+}
+.footer_main .tag .social_link{
+    display: flex;
+}
+.footer_main .tag .social_link a{
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #f3f3f3f3;
+    box-shadow: 0  0 20px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    color: black;
+    z-index: 10;
+    overflow: hidden;
+}
+footer .footer_main .tag .social_link a .fa-brands{
+    font-size: 25px;
+    line-height: 40px;
+    z-index: 10;
+    position: relative;
+    transition: 0.5s;
+}
+footer .footer_main .tag .social_link a:hover i{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px 0 0 ;
+}
+
+/* footer .footer_main .tag .social_link a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -90px;
+    background: linear-gradient(to left, #c72092, #6c14d0);
+    position: absolute;
+    z-index: -10;
+    transition: 0.5s;
+} */
+
+footer .footer_main .tag .social_link a:hover{
+    background: linear-gradient(to left, #c72092, #6c14d0);
+}
+footer .footer_main .tag .search_bar{
+    width: 230px;
+    height: 30px;
+    background: rgb(202, 202, 202);
+    border-radius: 25px;
+}
+footer .footer_main .tag .search_bar input{
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 13px;
+}
+.footer_main .tag .search_bar button{
+    padding: 7px 15px;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+.footer_main .tag .search_bar button:hover{
+    background: linear-gradient(to right, #6d1d54, #500e9c);
+    font-weight: 700;
 }

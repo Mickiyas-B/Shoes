@@ -836,7 +836,57 @@ section .main .button{
     left: 40%;
     margin-bottom: 20px;
 }
+.review h1{
+    font-size: 40px;
+    position: relative;
+    top: 55%;
+}
+.review .review_box{
+    position: relative;
+    top: 55%;
+    grid-template-columns: 1fr;
+    margin: 5px auto;
+}
+.review .review_box .review_card{
+    width: 450px;
+}
 
-
+.services{
+    height: 100vh;
+    width: 100%;
+}
+.services h1{
+    font-size: 40px;
+    position: relative;
+    top: 165%;
+    
+}
+.services .services_cards{
+    position: relative;
+    top: 168%;
+}
+.login_form{
+    display: block;
+    background-image: none;
+    height: 100vh;
+    width: 80%;
+}
+.login_form .left img{
+    width: 400px;
+}
+.login_form .left{
+    position: relative;
+    top: 100%;
+    opacity: .3;
+}
+.login_form .right{
+    position: relative;
+    top: 45%;
+    left: auto;
+    right: auto;
+}
+.login_form .right h1{
+    font-size: 30px;
+}
 
 }
